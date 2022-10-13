@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--paleBlue);
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.card {
+  max-width: 450px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  color: var(--darkBlue);
+}
+
+.hero_img {
+  width: 100%;
+}
+
+.main_container {
+  padding: 0 30px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main_container p {
+  color: var(--desaturatedBlue);
+}
+
+.main_container > * {
+  margin: 10px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--veryPaleBlue);
+  padding: 10px;
+}
+
+.container a {
+  font-size: 13px;
+}
+
+.container a:hover {
+  text-decoration: none;
+}
+
+.pricing_plan {
+  margin-right: 45px;
+  border-radius: 12px;
+}
+
+button {
+  width: 100%;
+  border-radius: 12px;
+  padding: 15px 0;
+  cursor: pointer;
+  border: none;
+}
+
+.proceed_btn {
+  background-color: var(--brightBlue);
+  color: #fff;
+  border: none;
+  box-shadow: 5px 5px 8px var(--paleBlue);
+}
+
+.proceed_btn:hover {
+  opacity: 0.8;
+}
+
+.cancel_btn {
+  background-color: #fff;
+  width: 100%;
+  color: var(--darkBlue);
+}
+
+.cancel_btn:hover {
+  color: #000;
+}
+
+footer {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+footer a {
+  color: hsl(228, 45%, 44%);
+}
